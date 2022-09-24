@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Montserrat:wght@200&family=Poppins:wght@200&family=Raleway:wght@200&family=Source+Sans+Pro:wght@300&display=swap');
+
+:root {
+	--azul: #0275d5;
+	--branco: #fff;
+	--lista-navbar: #8cb1e9;
+	--background-banner: rgba(0,0,0,0.5);
+	--background-botao: rgb(10, 10, 10);
+	--footer: #333;
+}
+
+.panel-group {
+	margin-top: 20px;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+html, body {
+	height: 100%;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-size: 1rem;
+	font-weight: 300;
+}
+
+header {
+	background-image: url("../img/projetos/background3.jpeg");
+	background-position: initial;
+	height: 100%;
+	position: relative;
+	font-weight: bold;
+	font-family: 'Raleway', sans-serif;
+}
+
+.navbar-brand {
+	font-size: 24px;
+}
+
+header h1 {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-family: 'Poppins', sans-serif;
+	font-size: 2rem;
+	font-weight: 800;
+	color: var(--branco);
+    font-style: normal;
+}
+
+.titulo-secundario {
+	margin: 3rem 0;
+	text-align: center;
+	text-decoration: overline underline;
+}
+
+header p {
+	font-family:'Amatic SC', cursive;
+	font-size: 28px;
+}
+
+.topCasaFina-banner {
+	color: var(--branco);
+	background: var(--background-banner);
+	padding: 20px;
+	width: 80%;
+	border-radius: 8px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	transition: 1s;
+}
+
+.btn-lg:hover, .btn-lg:active {
+	background: var(--background-botao);
+	border-color: var(--background-botao);
+	transition: .5s;
+}
+
+.jumbotron {
+	margin: 0;
+}
+
+.jumbotron :is(h3, p){
+	text-align: center;
+}
+
+.jumbotron h3::before {
+	content: "⭐";
+}
+
+.titulo-depoimentos {
+	background: var(--azul);
+	padding: 25px 0;
+	text-align: center;
+	color: var(--branco);
+	margin-bottom: 0;
+	font-size: 18px;
+	width: 100%;
+}
+
+.grupo-radio, .contato-select {
+	display: flex;
+	vertical-align: top;
+	margin: 1rem 0;
+}
+
+.grupo-radio {
+	width: 100%;
+}
+
+.contato-select {
+	width: 50%;
+	margin-left: 40px;
+}
+
+footer {
+    background-color: var(--footer);
+    color: var(--branco);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+footer address:last-child {
+	margin-bottom: 0;
+}
+
+#contato {
+	margin-top: 20px;
+}
+
+.embed-responsive {
+	margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+	header h1, header p, header button {
+		margin: 5px 15px;
+	}
+
+	h2 {
+		margin: 2rem 0 2rem 0;
+	}
+
+	.jumbotron {
+		margin-top: 2rem;
+	}
+
+	.navbar-nav li:first-child {
+		margin-left: 2rem;
+	}
+
+	.topCasaFina-banner {
+		top: 65%;
+	}
+
+	.navbar-nav li:hover {
+		background-color: var(--lista-navbar);
+		transition: .2s;
+		color: var(--branco);
+		border-radius: 10%;
+	}
+
+	.navbar-nav li a:hover {
+		background-color: var(--lista-navbar);
+		transition: .2s;
+		color: var(--branco);
+		border-radius: 10%;
+	}
+
+	.thumbnail {
+		height: 30rem;
+		font-size: 20px;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.navbar-nav li:first-child {
+		margin-left: 8rem;
+	}
+
+	.navbar-nav li {
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+
+	.navbar-brand, .navbar-nav li {
+		margin-top: 0.5rem;
+	}
+
+	nav {
+		height: 4rem;
+	}
+
+	.thumbnail {
+		height: 30rem;
+		font-size: 20px;
+	}
+
+	.thumbnail h3 {
+		padding-bottom: 5px;
+	}
+
+	#video-institucional {
+		padding: 0;
+	}
+
+	.form-group, .grupo-radio, #contato :is(h2, p, button) {
+		margin-left: 60px;
+	}
+}
+
